@@ -1,5 +1,5 @@
 body {
-	background: #ff00ff;
+	background: #ffffff;
 }
 
 .grid-container {
@@ -13,8 +13,14 @@ body {
 		'reel2 reel2 reel2 reel2 reel2 reel2';
 }
 
+header {
+}
+
 .reel1 {
 	grid-area: reel1;
+}
+
+aside {
 }
 
 .about {
@@ -23,6 +29,9 @@ body {
 
 .depotphoto {
 	grid-area: depotphoto;
+}
+
+table {
 }
 
 .printrsc {
@@ -47,6 +56,9 @@ body {
 
 .starthouse {
 	grid-area: starthouse;
+}
+
+footer {
 }
 
 .reel2 {
