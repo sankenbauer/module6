@@ -1,0 +1,54 @@
+body {
+	background: #ff00ff;
+}
+
+.grid-container {
+            display: grid;
+            grid-template-areas:
+                'reel1 reel1 reel1 reel1 reel1 reel1'
+                'about about about about depotphoto depotphoto'
+                'printrsc printrsc digitalrsc digitalrsc progsrv progsrv'
+                'getstarted getstarted getstarted getstarted getstarted getstarted'
+				'starttree starttree starttree starthouse starthouse starthouse'
+				'reel2 reel2 reel2 reel2 reel2 reel2';
+}
+
+.reel1 {
+	grid-area: reel1;
+}
+
+.about {
+	grid-area: about;
+}
+
+.depotphoto {
+	grid-area: depotphoto;
+}
+
+.printrsc {
+	grid-area: printrsc;
+}
+
+.digitalrsc {
+	grid-area: digitalrsc;
+}
+
+.progsrv {
+	grid-area: progsrv;
+}
+
+.getstarted {
+	grid-area: getstarted;
+}
+
+.starttree {
+	grid-area: starttree;
+}
+
+.starthouse {
+	grid-area: starthouse;
+}
+
+.reel2 {
+	grid-area: reel2;
+}
