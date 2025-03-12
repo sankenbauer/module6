@@ -1,38 +1,56 @@
 body {
 	background: #ffffff;
 	color: #333333;
+	width: 90vw;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+a {
+	color: #cc3366;
 }
 
 .grid-container {
             display: grid;
-            grid-template-areas:
+            /* grid-template-areas:
                 'reel1 reel1 reel1 reel1 reel1 reel1'
                 'about about about about depotphoto depotphoto'
                 'printrsc printrsc digitalrsc digitalrsc progsrv progsrv'
                 'getstarted getstarted getstarted getstarted getstarted getstarted'
-		'starttree starttree starttree starthouse starthouse starthouse'
-		'reel2 reel2 reel2 reel2 reel2 reel2';
+				'starttree starttree starttree starthouse starthouse starthouse'
+				'reel2 reel2 reel2 reel2 reel2 reel2'; */
+				grid-template-columns: auto auto auto auto auto auto;
+				grid-template-rows: auto auto auto auto auto auto;
 }
 
 header {
+	border: 1px black dashed;
 }
 
 .reel1 {
-	grid-area: reel1;
+	/* grid-area: reel1; */
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 6;
 }
 
 aside {
 }
 
 .about {
-	grid-area: about;
+	/* grid-area: about; */
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 4;
 }
 
 .depotphoto {
-	grid-area: depotphoto;
+	/* grid-area: depotphoto; */
+	grid-row: 2 / span 1;
+	grid-column: 5 / span 2;
 }
 
 table {
+	border: #143959;
+	border-width: 0 2px 0 2px;
 }
 
 th {
@@ -40,32 +58,47 @@ th {
 }
 
 .printrsc {
-	grid-area: printrsc;
+	/* grid-area: printrsc; */
+	grid-row: 3 / span 1;
+	grid-column: 1 / span 2;
 }
 
 .digitalrsc {
-	grid-area: digitalrsc;
+	/* grid-area: digitalrsc; */
+	grid-row: 3 / span 1;
+	grid-column: 3 / span 2;
 }
 
 .progsrv {
-	grid-area: progsrv;
+	/* grid-area: progsrv; */
+	grid-row: 3 / span 1;
+	grid-column: 5 / span 2;
 }
 
 .getstarted {
-	grid-area: getstarted;
+	/* grid-area: getstarted; */
+	grid-row: 4 / span 2;
+	grid-column: 1 / span 3;
 }
 
 .starttree {
-	grid-area: starttree;
+	/* grid-area: starttree; */
+	grid-row: 4 / span 1;
+	grid-column: 4 / span 3;
 }
 
 .starthouse {
-	grid-area: starthouse;
+	/* grid-area: starthouse; */
+	grid-row: 5 / span 1;
+	grid-column: 4 / span 3;
 }
 
 footer {
+	border: 1px black dashed;
 }
 
 .reel2 {
-	grid-area: reel2;
+	/* grid-area: reel2; */
+	grid-row: 6 / span 1;
+	grid-column: 1 / span 6;
 }
