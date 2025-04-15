@@ -48,15 +48,6 @@ aside {
 	grid-column: 5 / span 2;
 }
 
-table {
-	border: #143959;
-	border-width: 0 2px 0 2px;
-}
-
-th {
-	color: #143959;
-}
-
 .printrsc {
 	/* grid-area: printrsc; */
 	grid-row: 3 / span 1;
