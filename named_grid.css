@@ -1,0 +1,132 @@
+        img		{ 
+			max-width: 100%;
+		}
+		
+		
+		header {
+            grid-area: header;
+            background-color: yellow;
+        }
+
+
+        main {
+            grid-area: main;
+            background-color: orange;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: pink;
+        }
+		
+		nav		{
+            grid-area: nav;
+            background-color: fuchsia;
+        }
+		
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'main main main main main main'
+				'nav nav nav nav nav nav'
+				'footer footer footer footer footer footer';
+            grid-gap: .5em;
+            padding: .5em;
+			max-width: 62em; 
+			margin: auto;
+        }
+
+		div	{
+			display: inline-block;
+		}
+
+		header div {
+			border: 1px solid #000;
+			width: 10em;
+			margin: auto;
+			height: 3em;
+		}
+		
+		footer div {
+			border: 1px solid #000;
+			width: 10em;
+			margin: auto;
+			height: 3em;
+		}
+		
+		nav div  {
+			border: 1px solid #000;
+			width: 20em;
+			margin: auto;
+		}
+
+		main img {
+			float: right;
+			padding-left: 1em;
+		}
+			
+
+
+
+
+
+
+
+
+
+
+
+        /*FIRST BREAK POINT === tablet 
+        @media only screen and (max-width : 900px) {
+            body {
+                background: blue;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'main main main main main main'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+
+        }
+*/		
+
+        /*SECOND BREAK POINT === mobile 
+        @media only screen and (max-width : 600px) {
+
+            body {
+                background: fuchsia;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main main main'
+                    'aside aside aside aside aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+			
+			img {
+				display: none; /* AND YOU CAN MAKE THINGS DISAPPEAR WHEN NOT NEEDED */
+			}
+
+        }
+		*/
